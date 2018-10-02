@@ -1,0 +1,61 @@
+
+.dashCover{
+  padding: 5%;
+  width: 100%;
+  height: 100%;
+  background: #EFF1F6;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: scroll !important;
+  pointer-events: auto;
+}
+
+.dashBox{
+  background: #fff;
+  margin: 3%;
+  margin-top: 0%;
+  left: 0;
+  right: 0;
+}
+
+.boxA{
+  width: 350px;
+  height: 300px;
+}
+
+.boxB{
+  width: 600px;
+  height: 300px;
+}
+
+.boxC{
+  width: 350px;
+  height: 600px;
+}
+
+.boxD{
+  width: 600px;
+  height: 600px;
+}
+
+.boxE{
+  width: 600px;
+  height: 300px;
+}
+
+.boxF{
+  width: 350px;
+  height: 300px;
+}
+
+.boxSplit{
+  border-left: 2px dotted #e8e8e8;
+  height: 200px;
+  width: 2px;
+  margin-left: auto;
+  margin-right: 30%;
+  left: 0;
+  right: 0;
+  display: block;
+  margin-top: 14%;
+}

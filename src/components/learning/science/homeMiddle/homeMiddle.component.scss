@@ -1,0 +1,147 @@
+
+  .timeandDate{
+    color: #778ED5;
+    font-size: 21px;
+    margin: 8%;
+    margin-top: 7%;
+    display: block;
+
+    span{
+      color: #EAEDF8;
+      font-size: 18px;
+    }
+  }
+
+  .middleMD{
+    padding: 5%;
+  }
+
+  .sectionTitle{
+    font-size: 28px;
+    display: block;
+    color: #7A878F;
+    margin: 8%;
+    margin-top: -7%;
+
+    border-bottom: 1px dotted #7A878F;
+    width: 236px;
+  }
+
+  .newEntry{
+    width: 30vw;
+    height: 5vh;
+    margin: 8%;
+    margin-top: 0%;
+    background: #F2F6FF;
+    color: #c1c6d6;
+
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+
+    i{
+      font-size: 12px;
+      margin-right: 1%;
+    }
+  }
+
+  .linestrip{
+    background: #feecbb;
+    width: 100%;
+    height: 1px;
+    background-position: center;
+    background-size: 135%;
+    margin-top: 16.5%;
+
+  }
+
+  .botttomsec{
+    overflow: scroll;
+    width: 100%;
+    height: 33vh;
+  }
+
+  .journalTitle{
+    margin: 10%;
+    margin-top:7%;
+    color: #89A1DE;
+
+    i{
+      font-size: 14px;
+      margin-left: 65%;
+    }
+
+  }
+
+  .nextArticle{
+    margin-left: 40%;
+    color: #89A1DE;
+    font-size: 14px;
+    margin-top:7%;
+    position: absolute;
+
+    i{
+      font-size: 14px;
+      margin-left: 5%;
+    }
+
+  }
+
+  .journalTxt{
+    margin: 10%;
+    margin-top: -7%;
+    font-size: 16px;
+    color:  #878A95;
+
+  }
+
+  .middletypeSec{
+    padding: 10%;
+    width: 100%;
+    height: 100%;
+    display: block;
+
+    .title{
+      margin-top: 5%;
+      display: block;
+      font-size: 32px;
+
+      font-family: 'Nunito', cursive;
+      font-weight: 700;
+      width: 100%;
+      border: none;
+    }
+
+    textarea{
+      margin-top: 10%;
+      display: block;
+
+      font-family: 'Nunito', cursive;
+      font-weight: 400;
+      width: 100%;
+      font-size: 16px;
+      border: none;
+      height: 75%;
+    }
+
+    .byPerson{
+      margin-top: 3%;
+      display: block;
+      font-size: 14px;
+
+      font-family: 'Nunito', cursive;
+      font-weight: 400;
+      margin-left: 1%;
+    }
+
+    .theDate{
+      text-align: center;
+      margin-top: 90%;
+      display: block;
+      font-size: 16px;
+
+      font-family: 'Nunito', cursive;
+      font-weight: 400;
+
+      letter-spacing: 2px;
+    }
+  }

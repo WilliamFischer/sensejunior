@@ -1,0 +1,77 @@
+
+<ion-content padding>
+
+  <div class="topjazz">
+    <h3>
+      <font color="#F1654C">William Fischer</font> &bull; <font color="#2CC990">Year 6</font> &bull;
+      <font color="#83D6DE" *ngIf="Edition == 0">Free Mode</font>
+      <font color="#83D6DE" *ngIf="Edition == 1">Entertainment Mode</font>
+      <font color="#83D6DE" *ngIf="Edition == 2">Science Mode</font>
+    </h3>
+    <h4>Learning Level 3 &bull; Reading Level 8 &bull; Memory Level 12 &bull; 189 SenseCoins</h4>
+    <h5>Your currently doing <font color="#97CE68">very well</font>, however you should work on your <font color="#EB9532">comprehension</font> </h5>
+
+    <div class="rightside">
+      <i class="icon-settings2"></i>
+      <i class="icon-wifi"></i>
+      <i class="icon-bluetooth" (click)="teacherTrigger()"></i>
+      <i class="icon-battery"></i>
+      <h2 *ngIf="batteryLevel">{{batteryLevel}}%</h2>
+      <h2 *ngIf="!batteryLevel" (click)="welcomeTrigger()">N/A</h2>
+    </div>
+  </div>
+
+  <div class="inlinleflow">
+      <div class="longCard" style="border-color:#596275; color: #596275;" (click)="SchoolTrigger()" [ngClass]="{'pulse': cantShake == 1}">
+          <i class="icon-school"></i>
+          <p>School</p>
+          <div class="lockscreen" *ngIf="learnLock"><i class="icon-lock CardLockIco"></i></div>
+      </div>
+      <div class="longCard" style="border-color: #778beb; color: #778beb;" (click)="LearnTrigger()" [ngClass]="{'pulse': cantShake == 1}">
+          <i class="icon-learn"></i>
+          <p>Learn</p>
+          <div class="lockscreen" *ngIf="learnLock"><i class="icon-lock CardLockIco"></i></div>
+      </div>
+      <div class="longCard" style="border-color: #3dc1d3; color: #3dc1d3;" (click)="SearchTrigger()" [ngClass]="{'pulse': cantShake == 2}">
+          <i class="icon-search"></i>
+          <p>Search</p>
+          <div class="lockscreen" *ngIf="searchLock"><i class="icon-lock CardLockIco"></i></div>
+      </div>
+      <div class="longCard animated" style="border-color: #ea8685; color: #ea8685;" (click)="SocialTrigger()"  [ngClass]="{'pulse': cantShake == 3}">
+          <i class="icon-social"></i>
+          <p>Social</p>
+          <div class="lockscreen" *ngIf="socialLock"><i class="icon-lock CardLockIco"></i></div>
+      </div>
+      <div class="longCard animated" style="border-color: #786fa6; color:#786fa6;" (click)="GameTrigger()" [ngClass]="{'pulse': cantShake == 4}">
+          <i class="icon-game"></i>
+          <p>Game</p>
+          <div class="lockscreen" *ngIf="gameLock"><i class="icon-lock CardLockIco"></i></div>
+      </div>
+      <div class="longCard animated" style="border-color: #cf6a87; color: #cf6a87;" (click)="MediaTrigger()" [ngClass]="{'pulse': cantShake == 5}">
+          <i class="icon-tv"></i>
+          <p>Media</p>
+          <div class="lockscreen" *ngIf="mediaLock"><i class="icon-lock CardLockIco"></i></div>
+      </div>
+      <div class="longCard animated" style="border-color: #f5cd79; color: #f5cd79;" (click)="MusicTrigger()" [ngClass]="{'pulse': cantShake == 6}">
+          <i class="icon-music"></i>
+          <p>Music</p>
+          <div class="lockscreen" *ngIf="musicLock"><i class="icon-lock CardLockIco"></i></div>
+      </div>
+      <!-- <div class="longCard animated" style="border-color: #f19066; color: #f19066;"  (click)="MarketTrigger()" [ngClass]="{'pulse': cantShake == 7}">
+        <i class="icon-market"></i>
+        <p>Market</p>
+        <div class="lockscreen" *ngIf="marketLock"><i class="icon-lock CardLockIco"></i></div>
+      </div> -->
+      <div class="longCard animated" style="border-color: #e66767; color: #e66767;" (click)="ProfileTrigger()" [ngClass]="{'pulse': cantShake == 8}">
+        <i class="icon-profile"></i>
+        <p>Profile</p>
+        <div class="lockscreen" *ngIf="profileLock"><i class="icon-lock CardLockIco"></i></div>
+      </div>
+      <div class="bottomspace"></div>
+  </div>
+
+
+  <div class="bottomjazz">
+    <h3>Sensepad 2018. Aiming to provide a life-long curiosity, making life-long learners. Please, <a>help us</a>.</h3>
+  </div>
+</ion-content>

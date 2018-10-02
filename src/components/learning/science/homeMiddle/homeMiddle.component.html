@@ -1,0 +1,29 @@
+<div *ngIf="loading">
+  <div class="middletypeSec" *ngIf="ScienceTypeMode">
+    <input class="title" type="text"  value="{{titleValue}}" (click)="selectTitleInput()" placeholder="Title"/>
+    <div class="byPerson">By William Fischer</div>
+    <textarea type="text"  value="{{bodyValue}}" (click)="selectParagraphInput()" placeholder="Body..."></textarea>
+    <div class="theDate">June 3, 2018, 8:59pm</div>
+  </div>
+
+  <div class="middleMD" *ngIf="!ScienceTypeMode">
+    <label class="timeandDate">10:35pm <span> &bull; 29/04/2018</span></label><br />
+    <label class="sectionTitle">My Science Journal</label>
+
+    <button class="newEntry" (click)="NewEntry()"><i class="icon-plus"></i> New Entry</button>
+
+    <!-- <div class="linestrip"></div>
+
+    <div class="botttomsec">
+      <h1 class="journalTitle">Atoms</h1>
+      <h1 class="journalTxt">An atom is the smallest constituent unit of ordinary matter that has the properties of a chemical element. Every solid, liquid, gas, and plasma is composed
+        of neutral or ionized atoms. Atoms are extremely small; typical sizes are around 100 picometers (a ten-billionth of a meter, in the short scale).
+        Atoms are small enough that attempting to predict their behavior using classical physics – as if they were billiard balls, for example – gives noticeably incorrect predictions
+        due to quantum effects. Through the development of physics, atomic models have incorporated quantum principles to better explain and predict the behavior.</h1>
+    </div> -->
+  </div>
+</div>
+
+<p *ngIf="!loading">
+  Loading...
+</p>

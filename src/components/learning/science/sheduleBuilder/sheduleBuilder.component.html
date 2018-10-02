@@ -1,0 +1,109 @@
+<div *ngIf="loading">
+
+  <!-- <div *ngIf="!ScienceTypeMode && !SheuldeBuilderMode && !showKeyboard"> -->
+  <div *ngIf="!SheuldeBuilderMode">
+    <h1>Your Shedule</h1>
+    <h2>Your Shedule hasn't been constructed yet..</h2>
+
+    <button class="buildShedule" (click)="ShedBuild()">Build Shedule</button>
+  </div>
+
+
+  <div class="BuildShedMode" *ngIf="SheuldeBuilderMode && !showKeyboard">
+    <div class="CardContainer">
+      <i class="icon-settings2 infoIconBuild" (click)="backBuilderMode()"></i>
+      <i class="icon-close closeIconBuild" (click)="backBuilderMode()"></i>
+      <h1 class="animated fadeIn">William, what do you like?</h1>
+
+      <div class="lovecards animated fadeIn" style="background: #F3F8FD; color: #203A5A;" (click)="selectCard('1')">
+        <span class="whiteDot" [ngClass]="{'SelectedDot': cardSelected[1]}" ></span>
+        <img src="https://cdn.dribbble.com/users/146798/screenshots/2398320/r2d2_1x.png" />
+        <p>I want to know how robots work</p>
+      </div>
+
+      <div class="lovecards animated fadeIn" style="background: #F8EE5F; color: #C81E5A;" (click)="selectCard('2')">
+        <span class="whiteDot" [ngClass]="{'SelectedDot': cardSelected[2]}" ></span>
+        <img src="https://cdn.dribbble.com/users/13774/screenshots/2908884/pokedex-dribbble_1x.png" />
+        <p>I like creatures, like Pokemon</p>
+      </div>
+
+      <div class="lovecards animated fadeIn"  style="background: #342E3D; color: #fff;" (click)="selectCard('3')">
+        <span class="whiteDot" [ngClass]="{'SelectedDot': cardSelected[3]}" ></span>
+        <img src="https://cdn.dribbble.com/users/358029/screenshots/1440214/space-capsule.gif" />
+        <p>I want to go to space</p>
+      </div>
+
+      <div class="lovecards animated fadeIn" style="background: #D1D171; color: #C47B12;" (click)="selectCard('4')">
+        <span class="whiteDot" [ngClass]="{'SelectedDot': cardSelected[4]}" ></span>
+        <img src="https://cdn.dribbble.com/users/398834/screenshots/4132633/illustration_keyfigures_animation.gif" />
+        <p>I'm interested in collecting</p>
+      </div>
+
+      <div class="lovecards animated fadeIn" style="background: #FCEEDB; color: #89565C;" (click)="selectCard('5')">
+        <span class="whiteDot" [ngClass]="{'SelectedDot': cardSelected[5]}" ></span>
+        <img src="https://cdn.dribbble.com/users/21546/screenshots/2020444/nmb_animals_dribbble_1x.jpg" />
+        <p><br />I like animals</p>
+      </div>
+
+      <div class="lovecards animated fadeIn" style="background: #3D3831; color: #fff;" (click)="selectCard('6')">
+        <span class="whiteDot" [ngClass]="{'SelectedDot': cardSelected[6]}" ></span>
+        <img src="https://cdn.dribbble.com/users/3820/screenshots/1796772/space-travel.gif" />
+        <p>I'm curious about space</p>
+      </div>
+
+      <div class="lovecards animated fadeIn"  style="background: #FCF7F4; color: #F6AB63;" (click)="selectCard('7')">
+        <span class="whiteDot" [ngClass]="{'SelectedDot': cardSelected[7]}" ></span>
+        <img src="https://cdn.dribbble.com/users/60166/screenshots/2913692/volcano2_1x.jpg" />
+        <p>I'm interested in volcanos and earthquakes</p>
+      </div>
+
+      <div class="lovecards animated fadeIn" style="background: #5FB5E9; color: #E8EBEC;" (click)="selectCard('8')">
+        <span class="whiteDot" [ngClass]="{'SelectedDot': cardSelected[8]}" ></span>
+        <img src="https://cdn.dribbble.com/users/6051/screenshots/4165238/coderdojo_1x.png" />
+        <p>I want to make a robot</p>
+      </div>
+
+      <div class="lovecards animated fadeIn" style="background: #FFE5DC; color: #FE6759;" (click)="selectCard('9')">
+        <span class="whiteDot" [ngClass]="{'SelectedDot': cardSelected[9]}" ></span>
+        <img src="https://cdn.dribbble.com/users/924425/screenshots/3716488/scooter-repair.jpg" />
+        <p>I'm curious about how things are made</p>
+      </div>
+
+      <div class="lovecards animated fadeIn" style="background: #E87D9B; color: #F8E8E8;" (click)="selectCard('10')">
+        <span class="whiteDot" [ngClass]="{'SelectedDot': cardSelected[10]}" ></span>
+        <img src="https://cdn.dribbble.com/users/37530/screenshots/1241593/human-biology.png" />
+        <p>I'm curious about biology and how human's work</p>
+      </div>
+
+      <div class="lovecards animated fadeIn" style="background: #EEF8FF; color: #2661A1;" (click)="selectCard('11')">
+        <span class="whiteDot" [ngClass]="{'SelectedDot': cardSelected[11]}" ></span>
+        <img src="https://cdn.dribbble.com/users/146798/screenshots/4140115/chemistry-flask-animation.gif" />
+        <p>I'm curious about chemistry and how our world work</p>
+      </div>
+
+      <div class="lovecards animated fadeIn" style="background: #494043; color: #E1DCD3;" (click)="selectCard('12')">
+        <span class="whiteDot" [ngClass]="{'SelectedDot': cardSelected[12]}" ></span>
+        <img src="https://cdn.dribbble.com/users/31348/screenshots/1196799/mystery_project_44_1x.jpg" />
+        <p>I'm interested in planes</p>
+      </div>
+
+      <div class="lovecards animated fadeIn" style="background: #E2DDD5; color: #B17B55;" (click)="selectCard('13')">
+        <span class="whiteDot" [ngClass]="{'SelectedDot': cardSelected[13]}" ></span>
+        <img src="https://cdn.dribbble.com/users/376684/screenshots/1449338/cars_bounce_3.gif" />
+        <p>I'm interested in cars</p>
+      </div>
+
+      <div class="lovecards animated fadeIn" style="background: #889AB5; color: #fff;" (click)="selectCard('14')">
+        <span class="whiteDot" [ngClass]="{'SelectedDot': cardSelected[14]}" ></span>
+        <img src="https://cdn.dribbble.com/users/788099/screenshots/4051291/types_of_cars_kit8-net_1x.png" />
+        <p>I'm interested in how cars and trucks move</p>
+      </div>
+
+      <button class="buildShedCont">Begin your science adventure</button>
+    </div>
+  </div>
+</div>
+
+<p *ngIf="!loading">
+  Loading...
+</p>

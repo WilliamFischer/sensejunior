@@ -1,0 +1,18 @@
+<div class="fullSchool">
+
+  <div class="toolBar">
+    <img src="assets/imgs/orca1024.png" class="tophomebutton" (click)="dashTrigger()"/>
+
+    <ul class="toolbarIcons">
+      <li (click)="homeModeSelect()"><i [ngClass]="{'activeIcon': homeMode}" class="icon icon-bell"></i></li>
+      <li (click)="filesModeSelect()"><i [ngClass]="{'activeIcon': filesMode}" class="icon icon-folderHolder"></i></li>
+    </ul>
+
+    <img src="assets/critters/Snail.jpg" class="myCritter">
+  </div>
+
+  <school-files *ngIf="filesMode"></school-files>
+
+  <school-home *ngIf="homeMode"></school-home>
+
+</div>

@@ -1,0 +1,240 @@
+.toolBar{
+  pointer-events: auto;
+}
+
+// .show-page{
+//   pointer-events: none;
+// }
+
+.bodyCover{
+  display: inline-flex;
+  pointer-events: none;
+}
+
+.fileNav{
+  background: #F1F0F8;
+  height: 100%;
+  display: block;
+  width: 22%;
+  box-shadow: 0px 0px 10px #8e8e8e;
+
+  .yourFiles{
+    color: #32346A;
+    font-size: 18px;
+    padding: 10%;
+    padding-left: 15%;
+    letter-spacing: 1px;
+
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+  }
+
+  .fileList{
+    list-style: none;
+    margin-top: 3.3vh;
+
+    .teachFolder{
+
+      h2{
+        color: #a3a7cc;
+        label{
+          color: #d2d6e1;
+        }
+      }
+      i{
+        color: #a3a7cc;
+      }
+    }
+
+    li{
+      padding-top: 5%;
+      padding-bottom: 0%;
+      padding-left: 10%;
+      margin-left: -3vw;
+
+      i{
+        display: block;
+        width: 50px;
+        text-align: center;
+        line-height: 9vh;
+        padding-left: 1%;
+        font-size: 24px;
+        position: fixed;
+        color: #A5ADC4;
+      }
+
+      h2{
+        text-align: left;
+        margin-left: 30%;
+        font-size: 14px;
+
+        color: #47509A;
+        label{
+          font-size: 12px;
+          color: #A5ADC4;
+          margin-top: 2%;
+          display: block;
+        }
+      }
+    }
+
+    .selectedTab{
+      background: #fff;
+
+
+      i{
+        color: black;
+      }
+    }
+  }
+}
+
+.FileNavExtended{
+  width: 30%;
+  padding: 3%;
+  padding-top: 0%;
+  overflow: scroll;
+  overflow-x: hidden;
+  pointer-events:auto;
+
+  .yourFiles{
+    padding-top: 7%;
+  }
+
+  h2{
+      margin-top: -16%;
+  }
+
+  i{
+    position: relative !important;
+  }
+}
+
+
+.displayPort{
+  background: #f4f4f4;
+  height: 100%;
+  display: block;
+  width: 41%;
+  pointer-events:auto;
+
+  .writingPage{
+    width: 75%;
+    height: 90vh;
+    margin-top: 5%;
+
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    display: block;
+    background: #fff;
+    box-shadow: 0px 0px 20px #efefef;
+    //border: 1px solid #b6b6b6;
+    padding: 10%;
+
+    .writeBody{
+      border: none;
+      width: 100%;
+      height: 100%;
+    }
+
+
+    .toolBox{
+      width: 220px;
+      height: 30px;
+      background: #353D42;
+      border-radius: 4px;
+      position: absolute;
+      padding: 6px;
+      padding-left: 10px;
+      padding-right: 10px;
+      display: inline-flex;
+    }
+
+    .searchLarge{
+        height: 100px;
+        margin-top: -70px;
+    }
+
+    .arrow-down {
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+
+      border-top: 5px solid #353D42;
+      margin-top: 24px;
+      margin-left: 10px;
+      position: absolute;
+    }
+    .searchingForText{
+      text-align: center;
+      margin-top: 10%;
+      color: #8B959B;
+      font-size: 18px;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+    }
+
+    .quickSearchTxt{
+      color: #8B959B;
+
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 12px;
+      width: 75px;
+      text-align: center;
+    }
+
+    .tinyToolHR{
+      border-right: 1px solid #61686c;
+      width:1px;
+      height: 50%;
+      margin-top:1.87%;
+    }
+    .lilQuickSpace{
+      width: 10px;
+      display: block;
+      height: 100%;
+    }
+    .moreFonts{
+      text-align: center;
+      width: 35px;
+      line-height: 20.8px;
+
+      .icon-more{
+        transform: rotate(90deg) !important;
+        color: #8B959B;
+      }
+    }
+
+    .styleSelector{
+      width: 25px;
+      color: #8B959B;
+      text-align: center;
+      font-family: 'Neucha';
+      font-weight: 800;
+      font-size: 14px;
+    }
+  }
+
+  .writingToolbar{
+    width: 75%;
+    height: 60px;
+    margin-top: 5%;
+
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    display: block;
+    background: #fff;
+    box-shadow: 0px 5px 10px #efefef;
+    text-align: left;
+    padding-left: 10%;
+    font-size: 18px;
+    padding-top: 3.5%;
+  }
+}

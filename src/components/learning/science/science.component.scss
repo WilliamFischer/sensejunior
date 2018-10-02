@@ -1,0 +1,410 @@
+.moduleWrapper{
+  background-color: #fff;
+
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  height: 600px;
+  border-radius: 10px;
+  display: inline-flex;
+  position: absolute;
+  margin-top: 9%;
+
+}
+
+.leftmodule{
+    height: 100%;
+    width: 15%;
+    background-color: #778ED5;
+
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    .Option{
+      width: 100%;
+      height: 33.33%;
+      text-align: center;
+      line-height: 26.5vh;
+
+      i{
+        color: #fff;
+        font-size: 36px;
+      }
+
+    }
+
+    .TopOption{
+      border-top-left-radius: 10px;
+    }
+
+    .selectedTabOption{
+      background: #7288CC;
+    }
+
+    .BottomOption{
+      border-bottom-left-radius: 10px;
+    }
+}
+
+.middlemodule{
+  height: 100%;
+  width: 60%;
+
+  top: 0px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  overflow: hidden;
+
+  .timeandDate{
+    color: #778ED5;
+    font-size: 21px;
+    margin: 8%;
+    margin-top: 7%;
+    display: block;
+
+    span{
+      color: #EAEDF8;
+      font-size: 18px;
+    }
+  }
+
+  .sectionTitle{
+    font-size: 28px;
+    display: block;
+    color: #7A878F;
+    margin: 8%;
+    margin-top: -7%;
+
+    border-bottom: 1px dotted #7A878F;
+    width: 236px;
+  }
+
+  .newEntry{
+    width: 30vw;
+    height: 5vh;
+    margin: 8%;
+    margin-top: 0%;
+    background: #F2F6FF;
+    color: #c1c6d6;
+
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+
+    i{
+      font-size: 12px;
+      margin-right: 1%;
+    }
+  }
+
+  .linestrip{
+    background: #feecbb;
+    width: 100%;
+    height: 1px;
+    background-position: center;
+    background-size: 135%;
+    margin-top: 16.5%;
+
+  }
+
+  .botttomsec{
+    overflow: scroll;
+    width: 100%;
+    height: 33vh;
+  }
+
+  .journalTitle{
+    margin: 10%;
+    margin-top:7%;
+    color: #89A1DE;
+
+    i{
+      font-size: 14px;
+      margin-left: 65%;
+    }
+
+  }
+
+  .nextArticle{
+    margin-left: 40%;
+    color: #89A1DE;
+    font-size: 14px;
+    margin-top:7%;
+    position: absolute;
+
+    i{
+      font-size: 14px;
+      margin-left: 5%;
+    }
+
+  }
+
+  .journalTxt{
+    margin: 10%;
+    margin-top: -7%;
+    font-size: 16px;
+    color:  #878A95;
+
+  }
+}
+
+.rightmodule{
+    height:100%;
+    width: 25%;
+    float: right;
+    background-color: #F2F6FF;
+
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    top: 0px;
+    padding: 10px;
+
+    h1{
+      color: #778ED4;
+      font-size: 21px;
+      margin: 20px;
+      margin-top: 20%;
+    }
+
+    h2{
+      font-size: 14px;
+      margin-top: 10%;
+      display: block;
+      color:  #878A95;
+      margin: 20px;
+    }
+
+    .buildShedule{
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      display: block;
+      margin-top: 80%;
+      width: 90%;
+      height: 45px;
+      border-radius: 5px;
+
+      font-family: 'Nunito', sans-serif;
+      font-weight: 600;
+
+      background: #FEDE84;
+      color: #A79257;
+    }
+}
+
+.biggersidemodule{
+  width: 50% !important;
+}
+
+.freewrapper{
+  background-color: #fff;
+
+  width: 95% !important;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  height: 600px;
+  border-radius: 10px;
+  display: inline-flex;
+  position: absolute;
+  margin-top: 9%;
+}
+
+.BuildShedMode{
+  width: 100%;
+  overflow: hidden;
+  margin-top: -1.4vh;
+
+  h1{
+    font-family: 'Cinzel', cursive;
+    font-weight: 900;
+    font-size: 28px !important;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    color: #F1DF95 !important;
+    text-shadow: 3px 2px 3px #7F2E34 !important;
+
+    text-transform: uppercase;
+
+    padding-bottom: 3vh;
+    display: block;
+    margin-top: 0vh !important;
+  }
+
+  .closeIconBuild{
+    width: 100%;
+    text-align: right;
+    margin: 10%;
+    font-size: 18px !important;
+    color: #778ED5;
+    margin-top: -14%;
+  }
+
+  .infoIconBuild{
+    width: 100%;
+    text-align: left;
+    margin: 10%;
+    font-size: 26px !important;
+    color: #778ED5;
+  }
+
+
+  .CardContainer{
+    width: 100%;
+    height: 80.1vh;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+
+  .CardContainer::-webkit-scrollbar {
+      width: 0px;
+      background: transparent;
+  }
+  .lovecards{
+    width: 45%;
+    height: 42%;
+    background-color: #ffffff;
+    display: block;
+    margin: 10px;
+    text-align: center;
+    padding: 5%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 1.5px #8e8e8e;
+
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+
+    .whiteDot{
+      width: 20px;
+      height: 20px;
+      position: absolute;
+
+      background: #fff;
+      border-radius: 50%;
+      z-index: 9000;
+      margin-left: 70%;
+    }
+
+    .SelectedDot{
+        background: #27ae60;
+    }
+
+    p{
+      font-family: 'Nunito', cursive;
+      font-weight: 700;
+
+      font-size: 14px;
+
+      margin-top: 15%;
+    }
+  }
+
+  .buildShedCont{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 7vh;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+
+    text-transform: uppercase;
+
+    font-family: 'Cinzel', cursive;
+    font-weight: 900;
+
+    font-size: 14px;
+    color: #fff !important;
+    background: #F1DF95;
+    box-shadow: 0px 0px 10px #8e8e8e;
+    line-height: 57px
+  }
+
+  .SelectedCard{
+    box-shadow: 0px 0px 10px 2px black !important
+  }
+}
+
+.inputSelected{
+}
+
+.backIconA{
+  float: right;
+}
+
+.keyboardEditingDetails{
+  display: inline-block;
+  width: 100%;
+  margin-top: 5vh;
+  font-size: 16px;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+.senseKeyboardEditing .mainkeyboard{
+  margin-top: 5vh;
+}
+
+
+.pickerContainer{
+  width: 85%;
+  height: 80%;
+  margin-top: 11%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  position: absolute;
+  display: inline-flex;
+  flex-wrap: wrap;
+
+  .subjectCard{
+    width: 250px;
+    height: 250px;
+    display: block;
+    background: #f3d8be;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    line-height: 55vh;
+    text-transform: uppercase;
+    color: #262626;
+    font-size: 16px;
+    box-shadow: 0px 0px 3px #262626;
+    letter-spacing: 1px;
+
+    font-family: 'Nunito', cursive;
+    font-weight: 700;
+
+    img{
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      position: absolute;
+      top: 12%;
+    }
+  }
+}

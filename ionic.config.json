@@ -1,0 +1,7 @@
+{
+  "name": "senseTabJunior",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

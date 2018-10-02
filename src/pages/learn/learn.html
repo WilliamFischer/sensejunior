@@ -1,0 +1,45 @@
+<div class="backColouring" [ngClass]="{'whiteBackground' : learnPickerMode, 'offWhiteBackground' : mathsMode, 'hardyellow' : artMode}">
+  <div class="topSecWrapper">
+    <img src="assets/imgs/orca1024.png" class="backOrca" *ngIf="learnPickerMode" (click)="backToDash()"/>
+
+    <img src="assets/imgs/orca1024.png" class="backOrca" *ngIf="mathsMode" (click)="backToDash()"/>
+    <img src="assets/imgs/orca1024_gld.png" class="backOrca" *ngIf="scienceMode" (click)="backToDash()"/>
+    <!-- <img src="assets/imgs/orca1024_crm.png" class="backOrca" *ngIf="artMode" (click)="backToDash()"/> -->
+    <img src="assets/imgs/orca1024_crm.png" class="backOrca" *ngIf="historyMode" (click)="backToDash()"/>
+
+    <label class="goldtext" *ngIf="scienceMode" (click)="returnToPicker()">Science Mode</label>
+    <label class="goldtext greentext" *ngIf="mathsMode" (click)="returnToPicker()">Math Mode</label>
+    <label class="goldtext greentext" *ngIf="historyMode" (click)="returnToPicker()">History Mode</label>
+    <label class="goldtext blacktext" *ngIf="learnPickerMode">Learn with SensePad</label>
+  </div>
+  <!-- <h3>gatorade is for pussies</h3> -->
+
+  <div *ngIf="learnPickerMode" class="pickerContainer">
+    <div class="subjectCard" style="background:#67BCFF"><img src="https://cdn.dribbble.com/users/1044993/screenshots/3813395/shiba-inu-reading_1x.png" />English</div>
+    <div class="subjectCard" style="background:#BCE44F" (click)="triggerMath()"><img src="https://cdn.dribbble.com/users/1044993/screenshots/3818487/shiba-inu-math_1x.png" />Maths</div>
+    <div class="subjectCard" style="background:#FFED57" (click)="triggerScience()"><img src="https://cdn.dribbble.com/users/1044993/screenshots/3815788/shiba-inu-chemistry_1x.png" />Science</div>
+    <div class="subjectCard" style="background:#C7D4F9" (click)="triggerHistory()"><img src="https://cdn.dribbble.com/users/1044993/screenshots/4276483/australian-shepherd_teacher_1x.png" />History & Geography</div>
+    <div class="subjectCard" style="background:#FFF8E9"><img src="https://cdn.dribbble.com/users/1044993/screenshots/3467070/meerkat_dribbble-2_1x.png" />Computing</div>
+    <div class="subjectCard" style="background:#D4FAFD" (click)="triggerArt()"><img src="https://cdn.dribbble.com/users/1044993/screenshots/3969288/manatee-film_dribbble_1x.png" />Film, Art & Design</div>
+    <div class="subjectCard" style="background:#FFFFB9"><img src="https://cdn.dribbble.com/users/1044993/screenshots/4006340/singing-star_dribbble_1x.png" />Music</div>
+    <div class="subjectCard" style="background:#DCF1DE"><img src="https://cdn.dribbble.com/users/1044993/screenshots/4766806/dog-and-tennis-ball_dribbble_1x.png" />Health & Well-being</div>
+  </div>
+
+  <div class="centerCore" *ngIf="scienceMode">
+    <learn-science></learn-science>
+  </div>
+
+  <div class="centerCore" *ngIf="artMode">
+    <learn-art></learn-art>
+  </div>
+
+  <div class="centerCore" *ngIf="mathsMode">
+    <learn-maths></learn-maths>
+  </div>
+
+  <div class="centerCore" *ngIf="historyMode">
+    <learn-history></learn-history>
+  </div>
+
+
+</div>

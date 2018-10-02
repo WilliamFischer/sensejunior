@@ -1,0 +1,79 @@
+<div class="gridLayout" *ngIf="!filmView">
+  <div class="row">
+    <div class="block three">
+      <!-- <img class="orcaLogo" src="../../assets/imgs/orca1024.png" /> -->
+      <i class="icon cubeIcon icon-cube" (click)="backToLearn()"></i>
+    </div>
+    <div class="block two">
+      <i class="icon menuIcon icon-menu" *ngIf="!lilMenu" (click)="littleMenu()"></i>
+      <i class="icon menuIcon icon-close" *ngIf="lilMenu" (click)="littleMenuBak()"></i>
+    </div>
+    <div class="block two">
+      <i class="icon flagIcon icon-journal"></i>
+    </div>
+    <div class="block three">
+      <span class="diagonalLine"></span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="block five">
+      <img class="coreLogo" src="https://upload.wikimedia.org/wikipedia/commons/9/90/2001_A_Space_Odyssey_movie_black_logo.png" />
+      <div class="coretext">
+        2001: A Space Odyssey is widely regarded as one of the greatest and most influential films ever made.
+        This synopis will guide you through how the film manages to be culturally, historically, and aesthetically significant
+      </div>
+      <div class="blackCircle">Explore <i class="icon icon-right2"></i></div>
+      <img class="currentDisImg" src="https://www.itsnicethat.com/system/files/052018/5af308727fa44cdd6f00048d/feature_hero/2001-a-space-odyssesy-film-itsnicethat-hero.png?1525876978" />
+    </div>
+    <div class="block two">
+      <h1 class="theTime" *ngIf="!lilMenu">9:03 PM</h1>
+      <ul class="smallMenu" *ngIf="lilMenu">
+        <li (click)="filmMode()">Film</li>
+        <li>Art</li>
+        <li>Design</li>
+      </ul>
+    </div>
+    <div class="block three">
+      <span class="diagonalLine2"></span>
+    </div>
+  </div>
+</div>
+
+<div class="gridLayout" *ngIf="filmView">
+  <div class="row">
+    <div class="block two"  (click)="mainFilmMode()">
+      <h1 class="titleLetter">F</h1>
+    </div>
+    <div class="block two"></div>
+    <div class="block two"></div>
+    <div class="block four"></div>
+  </div>
+  <div class="row">
+    <div class="block four"></div>
+    <div class="block two"></div>
+    <div class="block four"></div>
+  </div>
+</div>
+  <!-- <div class="blockSlider">
+    <div class="artBlock">
+      <div class="blackMid">
+        <h1>Search Sensepad</h1>
+      </div>
+    </div>
+    <div class="artBlock">
+      <div class="blackMid">
+      </div>
+    </div>
+    <div class="artBlock">
+      <div class="blackMid">
+      </div>
+    </div>
+    <div class="artBlock">
+      <div class="blackMid">
+      </div>
+    </div>
+    <div class="artBlock">
+      <div class="blackMid">
+      </div>
+    </div>
+  </div> -->

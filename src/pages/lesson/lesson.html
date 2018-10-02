@@ -1,0 +1,86 @@
+<div class="stepperWrapper" (click)="nextStep()" *ngIf="step <= 11">
+  <div *ngIf="step == 1">
+    <h1>Biology is the science of life. Biologists study the structure, function, growth,
+      origin, evolution and distribution of living organisms.</h1>
+
+    <h3>Click anywhere to continue</h3>
+  </div>
+
+  <div *ngIf="step == 2">
+    <h1>There are generally considered to be at least nine "umbrella" fields of biology,
+      each of which consists of multiple subfields.</h1>
+
+    <h3>Just keep clicking to continue</h3>
+  </div>
+
+  <div *ngIf="step == 3">
+    <h1><b>Biochemistry</b> <br /><br /> The study of the material substances that make up living things</h1>
+  </div>
+
+  <div *ngIf="step == 4">
+    <h1><b>Botany</b> <br /><br />  The study of plants, including agriculture</h1>
+  </div>
+
+  <div *ngIf="step == 5">
+    <h1><b>Cellular biology</b> <br /><br /> The study of the basic cellular units of living things</h1>
+  </div>
+
+  <div *ngIf="step == 6">
+    <h1><b>Ecology</b> <br /><br /> The study of how organisms interact with their environment</h1>
+  </div>
+
+  <div *ngIf="step == 7">
+    <h1><b>Evolutionary biology</b> <br /><br /> The study of the origins and changes in the diversity of life over time</h1>
+  </div>
+
+  <div *ngIf="step == 8">
+    <h1><b>Genetics</b> <br /><br /> The study of heredity</h1>
+  </div>
+
+  <div *ngIf="step == 9">
+    <h1><b>Molecular biology</b> <br /><br /> The study of biological molecules</h1>
+  </div>
+
+  <div *ngIf="step == 10">
+    <h1><b>Physiology</b> <br /><br /> The study of the functions of organisms and their parts</h1>
+  </div>
+
+  <div *ngIf="step == 11">
+    <h1><b>Zoology</b> <br /><br /> The study of animals, including animal behavior</h1>
+  </div>
+</div>
+
+<div class="quizWrapper" *ngIf="step == 12">
+    <h1>Name your two favourite branches of Biology</h1>
+    <div class="inputOption">1. <input #twelveA type="text" [(ngModel)]="twelveA.value" (ngModelChange)="twelveATyped($event)" required/> <i class="icon icon-tick" *ngIf="twelveAAns"></i></div> <br /><br />
+    <div class="inputOption">2. <input #twelveB type="text" [(ngModel)]="twelveB.value" (ngModelChange)="twelveBTyped($event)" required/> <i class="icon icon-tick" *ngIf="twelveBAns"></i></div>
+</div>
+
+<div class="stepperWrapper" (click)="nextStep()" *ngIf="step >= 13 && step <= 19">
+  <div *ngIf="step == 13">
+    <h1>All the branches of biology can be unified within a framework of five basic understandings about living things.</h1>
+  </div>
+  <div *ngIf="step == 14">
+    <h1>Studying the details of these five ideas provides the endless fascination of biological research</h1>
+  </div>
+  <div *ngIf="step == 15">
+    <h1><b>Cell Theory</b> <br /><br /> There are three parts to cell theory — the cell is the basic unit of life, all living things are composed of cells, and all cells arise from pre-existing cells.</h1>
+  </div>
+  <div *ngIf="step == 16">
+    <h1><b>Energy</b> <br /><br /> All living things require energy, and energy flows between organisms and between organisms and the environment.</h1>
+  </div>
+  <div *ngIf="step == 17">
+    <h1><b>Heredity</b> <br /><br /> All living things have DNA and genetic information codes the structure and function of all cells.</h1>
+  </div>
+  <div *ngIf="step == 18">
+    <h1><b>Equilibrium</b> <br /><br /> All living things must maintain homeostasis, a state of balanced equilibrium between the organism and its environment.</h1>
+  </div>
+  <div *ngIf="step == 19">
+    <h1><b>Evolution</b> <br /><br /> This is the overall unifying concept of biology. Evolution is the change over time that is the engine of biological diversity.</h1>
+  </div>
+</div>
+
+<div class="quizWrapper" *ngIf="step == 20">
+    <h1 (click)="nextStep()">What is evolution?</h1>
+    <div class="inputOption">ANSWER: <input #twelveA type="text" [(ngModel)]="twelveA.value" (ngModelChange)="twelveATyped($event)" required/> <i class="icon icon-tick" *ngIf="twelveAAns"></i></div> <br /><br />
+</div>

@@ -1,0 +1,36 @@
+
+<div *ngIf="loading" class="moduleWrapper" [ngClass]="{'freewrapper' : ScienceTypeMode || SheuldeBuilderMode || showKeyboard}" >
+
+  <div class="leftmodule animated"  [ngClass]="{'biggersidemodule' : ScienceTypeMode}">
+    <div *ngIf="!ScienceTypeMode">
+      <div class="Option TopOption" [ngClass]="{'selectedTabOption' : homeMiddle}" (click)="homeMiddleTrigger()"><i class="icon-journal"></i></div>
+      <div class="Option" [ngClass]="{'selectedTabOption' : searchMiddle}" (click)="searchMiddleTrigger()"><i class="icon-search"></i></div>
+      <div class="Option BottomOption" [ngClass]="{'selectedTabOption' : subjectsMiddle}" (click)="subjectsMiddleTrigger()"><i class="icon-cube"></i></div>
+    </div>
+  </div>
+
+  <div class="middlemodule animated">
+    <learn-science-homeMiddle *ngIf="homeMiddle"></learn-science-homeMiddle>
+    <learn-science-searchMiddle *ngIf="searchMiddle"></learn-science-searchMiddle>
+    <learn-science-subjectsMiddle *ngIf="subjectsMiddle"></learn-science-subjectsMiddle>
+  </div>
+
+  <div class="rightmodule animated" [ngClass]="{'biggersidemodule' : ScienceTypeMode || SheuldeBuilderMode || showKeyboard}">
+    <sense-keyboard *ngIf="showKeyboard"></sense-keyboard>
+    <learn-science-sheduleBuilder *ngIf="!showKeyboard && !ScienceTypeMode"></learn-science-sheduleBuilder>
+
+    <div class="keypadScienFull  animated fadeIn" *ngIf="ScienceTypeMode">
+      <div class="keyboardEditingDetails">
+        <label class="inputSelected">Editing {{selectedSearchInput}}</label>
+        <i class="icon-close backIconA" (click)="getOutOfTypeMode()"></i>
+      </div>
+      <sense-keyboard class="senseKeyboardEditing"></sense-keyboard>
+    </div>
+
+  </div>
+
+</div>
+
+<p *ngIf="!loading">
+  Loading...
+</p>

@@ -1,0 +1,71 @@
+<div *ngIf="loading">
+  <div class="middleSubPadding">
+    <button class="acceptLesson" *ngIf="currentSubject" (click)="gotoLesson()">Learn {{currentSubject}}</button>
+
+    <div *ngIf="currentSubject == 'science'" class="topPusher">
+      <div class="pillContainer">
+        <div class="nextPill" (click)="biologyTrigger()">
+          <label class="subjectTitle">Biology</label>
+          <label class="infoText">Life and living organisms</label>
+
+          <div class="bottomSection">
+            <div class="littleNumber">35%</div>
+            <div class="completeBar"><div class="completePercent" style="width: 35%;"></div></div>
+          </div>
+
+        </div>
+        <div class="nextPill">
+          <label class="subjectTitle">Chemistry</label>
+          <label class="infoText">Compounds composed of atoms</label>
+
+          <div class="bottomSection">
+            <div class="littleNumber">4%</div>
+            <div class="completeBar"><div class="completePercent" style="width: 4%;"></div></div>
+          </div>
+
+        </div>
+        <div class="nextPill">
+          <label class="subjectTitle">Physics</label>
+          <label class="infoText">Matter and its behavior through space and time</label>
+
+          <div class="bottomSection">
+            <div class="littleNumber">92%</div>
+            <div class="completeBar"><div class="completePercent" style="width: 92%;"></div></div>
+          </div>
+
+        </div>
+      </div>
+
+      <img class="sleepingBoi" src="https://cdn.dribbble.com/users/371094/screenshots/3679326/redpanda_1x.jpg" />
+    </div>
+
+    <div *ngIf="currentSubject == 'biology'">
+      <div class="speciesCollectTrigger" (click)="speciesTrigger()"><i class="icon icon-octopus"></i>Species Collection</div>
+      <div class="pillContainer subjectGrid">
+        <div class="subImgPill" style="background:#FEA47F;">Anatomy</div>
+        <div class="subImgPill" style="background:#fead8b;">Ecology</div>
+        <div class="subImgPill" style="background:#feb698;">Evolution</div>
+        <div class="subImgPill" style="background:#febfa5;">Botany</div>
+        <div class="subImgPill" style="background:#fec8b2;">Zoology</div>
+        <div class="subImgPill" style="background:#fed1bf;">Cellular</div>
+        <div class="subImgPill" style="background:#fedacb;">Genetics</div>
+        <div class="subImgPill" style="background:#fee3d8;">Microbiology</div>
+        <div class="subImgPill" style="background:#feece5;">Mycology</div>
+        <!-- <div class="subImgPill" style="background:#fef5f2;">Marine Biology</div> -->
+        <!-- <div class="subImgPill" style="background:#fff;">Biochemistry</div>
+        <div class="subImgPill" style="background:#fff;">Biophysics</div> -->
+        <div class="extraSpace"></div>
+      </div>
+    </div>
+
+    <learn-science-speciesCollection *ngIf="speciesCollection"></learn-science-speciesCollection>
+  <div>
+
+
+</div>
+
+
+
+<p *ngIf="!loading">
+  Loading...
+</p>

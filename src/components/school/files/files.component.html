@@ -1,0 +1,64 @@
+
+<div class="bodyCover" *ngIf="loading">
+  <div class="fileNav">
+    <h1 class="yourFiles">My files</h1>
+
+    <ul class="fileList">
+      <li><i class="icon icon-folder"></i><h2>Maths<br /><label>22 documents</label></h2></li>
+      <li><i class="icon icon-folder"></i><h2>English<br /><label>19 documents</label></h2></li>
+      <li class="selectedTab"><i class="icon icon-folderOpen"></i><h2>Science<br /><label>16 documents</label></h2></li>
+      <li><i class="icon icon-folder"></i><h2>History<br /><label>12 documents</label></h2></li>
+      <li><i class="icon icon-folder"></i><h2>Computing<br /><label>5 documents</label></h2></li>
+      <li><i class="icon icon-folder"></i><h2>Art<br /><label>0 documents</label></h2></li>
+    </ul>
+
+  </div>
+
+  <div class="fileNav FileNavExtended">
+    <h1 class="yourFiles">Science</h1>
+
+    <ul class="fileList">
+      <li class="teachFolder"><i class="icon icon-folder"></i><h2>Teacher Files<label>32 documents</label></h2></li>
+      <li><i class="icon icon-folder"></i><h2>Shared Folder<label>8 documents</label></h2></li>
+      <li><i class="icon icon-folder"></i><h2>Assessment<label>3 documents</label></h2></li>
+      <li><i class="icon icon-document"></i><h2>Sem 2, Day 9<br /><label>1023 words</label></h2></li>
+      <li><i class="icon icon-document"></i><h2>The Effect of Atoms<br /><label>443 words</label></h2></li>
+      <li><i class="icon icon-document"></i><h2>Notes<br /><label>579 words</label></h2></li>
+      <li><i class="icon icon-document"></i><h2>Other Notes<br /><label>234 words</label></h2></li>
+      <li class="selectedTab"><i class="icon icon-paper"></i><h2>Field Study<br /><label>556 words</label></h2></li>
+      <li><i class="icon icon-document"></i><h2>Biology Trip<br /><label>24 words</label></h2></li>
+      <li><i class="icon icon-document"></i><h2>Sem 1, Day 2<br /><label>24 words</label></h2></li>
+      <li><i class="icon icon-document"></i><h2>Chem 101<br /><label>24 words</label></h2></li>
+    </ul>
+  </div>
+
+
+  <div class="displayPort">
+    <div class="writingToolbar">Field Study</div>
+    <div class="writingPage" (click)="triggerHightlightSelect()">
+
+      <div class="toolBox" *ngIf="textPos.x" [ngClass]="{'searchLarge': searchLarge}" [ngStyle]="{'top.px': textPos.y-33, 'left.px': textPos.x-5}">
+
+          <div *ngIf="!searchLarge" class="quickSearchTxt" (click)="triggerSearchLarge()">Quick Search</div><div class="lilQuickSpace"></div>
+          <div *ngIf="!searchLarge" class="tinyToolHR"></div>
+          <div *ngIf="!searchLarge" class="moreFonts"><i class="icon icon-more"></i></div>
+          <div *ngIf="!searchLarge" class="tinyToolHR"></div>
+          <div *ngIf="!searchLarge" class="styleSelector">f</div>
+          <div *ngIf="!searchLarge" class="tinyToolHR"></div>
+          <div *ngIf="!searchLarge" class="styleSelector">s</div>
+          <div *ngIf="!searchLarge" class="tinyToolHR"></div>
+          <div *ngIf="!searchLarge" class="styleSelector">h</div>
+
+          <div *ngIf="searchLarge" class="searchingForText">Searching for {{selection}} <i class="icon icon-close"></i></div>
+
+      </div>
+
+      <div class="arrow-down" *ngIf="textPos.x" [ngStyle]="{'top.px': textPos.y-28, 'left.px': textPos.x-8}"></div>
+      <div class="writeBody" contenteditable="true"></div>
+    </div>
+  </div>
+</div>
+
+<p *ngIf="!loading">
+  Loading...
+</p>

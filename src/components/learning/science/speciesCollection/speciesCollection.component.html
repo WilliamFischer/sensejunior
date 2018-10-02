@@ -1,0 +1,20 @@
+<div *ngIf="loading">
+  <h1>Welcome to Species Collection</h1>
+
+  <h3>You have no tanks yet...</h3>
+
+  <div class="tanksWrapper">
+    <div class="addTank"  *ngIf="tankType == 1" (click)="TriggerET2">
+      <i class="icon icon-fishTank"></i>
+      <label>Add Tank</label>
+    </div>
+    <div class="secondTank" *ngIf="tankType == 2">
+      <label>Tank Types</label>
+    </div>
+  </div>
+
+</div>
+
+<p *ngIf="!loading">
+  Loading...
+</p>

@@ -1,0 +1,21 @@
+<div *ngIf="loading">
+  <div class="middleSubPadding" (click)="unKeyboard()">
+    <h1 class="searchTitle">Every great advance in science has issued from a new audacity of imagination. Search Sensepad with your mind wide open...</h1>
+
+    <input placeholder="The Origin of Species..." (click)="triggerSideKeyboard()" class="searchScience" value="{{searchQuery}}"/>
+
+    <div class="searchCard">
+      <h2 class="factTitle">The scientist of the day is <a href="#">Sir Isaac Newton</a></h2>
+      <p class="factDesc">Isaac was a british scientist who explained the Law of Gravity and the Laws of Motion.
+        Newton was born a farmer, but rebelled and went to law school! He was more interested in history. He
+        <label class="hardWord">conceived</label> Gravity whilst watching an apple
+        from a tree in an orchard. <br /><br /> <i>"A man may imagine things that are false, but he can only
+          understand things that are true."</i></p>
+      <img src="http://www.techandfacts.com/wp-content/uploads/2014/02/Isaac-Newton.jpg" class="factImg" />
+    </div>
+  </div>
+</div>
+
+<p *ngIf="!loading">
+  Loading...
+</p>

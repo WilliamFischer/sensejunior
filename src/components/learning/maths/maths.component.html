@@ -1,0 +1,37 @@
+
+<div class="bodyCover" *ngIf="loading">
+  <div class="middleBrick">
+    <div class="leftSide">
+      <h1>Year 6, Semester 2 Mathmatics</h1>
+      <div class="courseAmountAll"><div class="courseAmount"></div></div>
+      <div class="infoAmountComplete">3/10 complete</div>
+
+      <div class="beginLessonBtn">Start Course</div>
+
+      <div class="coreText">This is lesson three of Semester Two, 2018.
+        In this lesson, you will be taught further applied geomtery, and
+        complete a series of tasks.</div>
+    </div>
+    <div class="rightSide">
+      <div class="goalTitle">Todays' math goals</div>
+      <div class="lilThinGoalLine"></div>
+
+      <div class="mathGoalForm">
+        <input class="theMathInput" #mathGoalInput type="text" [(ngModel)]="mathGoalInput.value" (ngModelChange)="mathGoalInputTyped($event)" required/>
+        <span class="checkBox" *ngIf="checkbox" (click)="goalCheck()" [ngClass]="{'noBorder': checkboxChecked}">
+          <i *ngIf="checkboxChecked" class="icon icon-tick"></i>
+        </span>
+      </div>
+      <div class="mathGoalForm">
+        <input class="theMathInput" *ngIf="checkbox" #mathGoalInput2 type="text" [(ngModel)]="mathGoalInput2.value" (ngModelChange)="mathGoalInputTyped2($event)" required/>
+        <span class="checkBox" *ngIf="checkbox2" (click)="goalCheck2()" [ngClass]="{'noBorder': checkboxChecked2}">
+          <i *ngIf="checkboxChecked2" class="icon icon-tick"></i>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p *ngIf="!loading">
+  Loading...
+</p>
