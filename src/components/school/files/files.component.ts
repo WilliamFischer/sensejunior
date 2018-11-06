@@ -14,6 +14,7 @@ export class schoolFilesComponent implements OnInit {
   loading: boolean = true;
   textPos: any;
   searchLarge: boolean;
+  duelDocMode:boolean = false;
   selection: any;
 
   constructor(public navCtrl: NavController) {
@@ -31,6 +32,15 @@ export class schoolFilesComponent implements OnInit {
 
   unTriggerHighlight(){
     this.searchLarge = false;
+  }
+
+  doubleDoc(){
+    console.log("Duel Document Mode")
+    this.duelDocMode = true;
+  }
+
+  unDoubleDoc(){
+    this.duelDocMode = false;
   }
 
   triggerHightlightSelect(){

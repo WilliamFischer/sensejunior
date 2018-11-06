@@ -19,7 +19,7 @@ import { ScreenOrientation } from '@ionic-native/screen-orientation';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = SchoolPage;//LearnPage;//LessonPage;//;//DashPage//
+  rootPage:any = LearnPage;//SchoolPage;//LearnPage;//LessonPage;//;//DashPage//
 
    @ViewChild(Nav) navChild:Nav;
 

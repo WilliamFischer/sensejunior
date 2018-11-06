@@ -16,6 +16,7 @@ export class LearnPage {
   artMode:boolean = false;
   mathsMode: boolean = false;
   historyMode: boolean = false;
+  englishMode: boolean = false;
   learnPickerMode: boolean = true;
 
   constructor(public navCtrl: NavController) {}
@@ -25,6 +26,7 @@ export class LearnPage {
     this.mathsMode = false;
     this.artMode = false;
     this.historyMode = false;
+    this.englishMode = false;
     this.learnPickerMode = true;
   }
 
@@ -33,6 +35,7 @@ export class LearnPage {
     this.artMode = false;
     this.mathsMode = false;
     this.historyMode = false;
+    this.englishMode = false;
     this.learnPickerMode = false;
   }
 
@@ -41,6 +44,7 @@ export class LearnPage {
     this.scienceMode = false;
     this.mathsMode = false;
     this.historyMode = false;
+    this.englishMode = false;
     this.learnPickerMode = false;
   }
 
@@ -49,6 +53,7 @@ export class LearnPage {
     this.scienceMode = false;
     this.mathsMode = true;
     this.historyMode = false;
+    this.englishMode = false;
     this.learnPickerMode = false;
   }
 
@@ -57,6 +62,16 @@ export class LearnPage {
     this.scienceMode = false;
     this.mathsMode = false;
     this.historyMode = true;
+    this.englishMode = false;
+    this.learnPickerMode = false;
+  }
+
+  triggerEnglish(){
+    this.artMode = false;
+    this.scienceMode = false;
+    this.mathsMode = false;
+    this.historyMode = false;
+    this.englishMode = true;
     this.learnPickerMode = false;
   }
 

@@ -1,0 +1,78 @@
+
+.leftSideMenu{
+  width: 20%;
+  height: 65vh;
+  background: #363642;
+  display: block;
+}
+
+.coreContent{
+  width: 80%;
+  height: 65vh;
+  background: #f3f3f3;
+  display: block;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.coreOuterWrapper{
+  display: flex;
+
+  margin: 13%;
+}
+
+.littleOffWhiteTriangle{
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+
+  border-right:15px solid #f3f3f3;
+  margin-left: 95%;
+  margin-top: -14%;
+}
+
+.sideMenuitem{
+  width: 100%;
+  height: 25%;
+  display: block;
+  padding-top: 25%;
+  text-align: center;
+  color: #f3f3f3;
+  font-size: 14px;
+}
+
+.myPaperMode{
+  padding: 5%;
+  padding-left: 10%;
+
+  h1{
+    color: #363642;
+
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+  }
+
+  .aPaperCard{
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    display: inline-flex;
+    margin-top: 5%;
+    margin-right: 3%;
+    margin-left: 2%;
+  }
+}
+
+.topMenuItem{
+  background: #67BCFF;
+  width: 100%;
+  height: 25%;
+  text-align: center;
+  color: #f3f3f3;
+  padding-top: 25%;
+  font-size: 18px;
+
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+}

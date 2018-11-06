@@ -64,6 +64,14 @@ page-school {
     width: 22%;
     box-shadow: 0px 0px 10px #8e8e8e;
 
+    .backNavIcon{
+      padding-left: 15%;
+      margin-top: 15%;
+      display: block;
+      color: #32346A;
+      font-size: 12px;
+    }
+
     .yourFiles{
       color: #32346A;
       font-size: 18px;
@@ -99,7 +107,7 @@ page-school {
 
         h2{
           text-align: left;
-          margin-left: 30%;
+          margin-left: 25%;
           font-size: 14px;
 
           color: #47509A;
@@ -143,6 +151,9 @@ page-school {
     }
   }
 
+  .miniFileNav{
+    overflow:auto;
+  }
 
   .displayPort{
     background: #f4f4f4;
@@ -268,5 +279,13 @@ page-school {
       font-size: 18px;
       padding-top: 3.5%;
     }
+  }
+
+  .cutDisplayPort{
+    width: 36% !important;
+  }
+
+  page-school{
+
   }
 }

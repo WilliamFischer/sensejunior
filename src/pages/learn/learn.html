@@ -1,21 +1,21 @@
-<div class="backColouring" [ngClass]="{'whiteBackground' : learnPickerMode, 'offWhiteBackground' : mathsMode, 'hardyellow' : artMode}">
+<div class="backColouring" [ngClass]="{'whiteBackground' : learnPickerMode || englishMode, 'offWhiteBackground' : mathsMode, 'hardyellow' : artMode}">
   <div class="topSecWrapper">
     <img src="assets/imgs/orca1024.png" class="backOrca" *ngIf="learnPickerMode" (click)="backToDash()"/>
-
-    <img src="assets/imgs/orca1024.png" class="backOrca" *ngIf="mathsMode" (click)="backToDash()"/>
-    <img src="assets/imgs/orca1024_gld.png" class="backOrca" *ngIf="scienceMode" (click)="backToDash()"/>
+      <img src="assets/imgs/orca1024.png" class="backOrca" *ngIf="englishMode" (click)="returnToPicker()"/>
+    <img src="assets/imgs/orca1024_ow.png" class="backOrca" *ngIf="mathsMode" (click)="returnToPicker()"/>
+    <img src="assets/imgs/orca1024_gld.png" class="backOrca" *ngIf="scienceMode" (click)="returnToPicker()"/>
     <!-- <img src="assets/imgs/orca1024_crm.png" class="backOrca" *ngIf="artMode" (click)="backToDash()"/> -->
-    <img src="assets/imgs/orca1024_crm.png" class="backOrca" *ngIf="historyMode" (click)="backToDash()"/>
+    <img src="assets/imgs/orca1024_crm.png" class="backOrca" *ngIf="historyMode" (click)="returnToPicker()"/>
 
-    <label class="goldtext" *ngIf="scienceMode" (click)="returnToPicker()">Science Mode</label>
+    <!-- <label class="goldtext" *ngIf="scienceMode" (click)="returnToPicker()">Science Mode</label>
     <label class="goldtext greentext" *ngIf="mathsMode" (click)="returnToPicker()">Math Mode</label>
     <label class="goldtext greentext" *ngIf="historyMode" (click)="returnToPicker()">History Mode</label>
-    <label class="goldtext blacktext" *ngIf="learnPickerMode">Learn with SensePad</label>
+    <label class="goldtext blacktext" *ngIf="learnPickerMode">Learn with SensePad</label> -->
   </div>
   <!-- <h3>gatorade is for pussies</h3> -->
 
   <div *ngIf="learnPickerMode" class="pickerContainer">
-    <div class="subjectCard" style="background:#67BCFF"><img src="https://cdn.dribbble.com/users/1044993/screenshots/3813395/shiba-inu-reading_1x.png" />English</div>
+    <div class="subjectCard" style="background:#67BCFF" (click)="triggerEnglish()"><img src="https://cdn.dribbble.com/users/1044993/screenshots/3813395/shiba-inu-reading_1x.png" />English</div>
     <div class="subjectCard" style="background:#BCE44F" (click)="triggerMath()"><img src="https://cdn.dribbble.com/users/1044993/screenshots/3818487/shiba-inu-math_1x.png" />Maths</div>
     <div class="subjectCard" style="background:#FFED57" (click)="triggerScience()"><img src="https://cdn.dribbble.com/users/1044993/screenshots/3815788/shiba-inu-chemistry_1x.png" />Science</div>
     <div class="subjectCard" style="background:#C7D4F9" (click)="triggerHistory()"><img src="https://cdn.dribbble.com/users/1044993/screenshots/4276483/australian-shepherd_teacher_1x.png" />History & Geography</div>
@@ -39,6 +39,10 @@
 
   <div class="centerCore" *ngIf="historyMode">
     <learn-history></learn-history>
+  </div>
+
+  <div class="centerCore" *ngIf="englishMode">
+    <learn-english></learn-english>
   </div>
 
 

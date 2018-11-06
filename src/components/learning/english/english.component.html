@@ -1,7 +1,75 @@
-<div *ngIf="!loading">
-  HELLO
+<div *ngIf="loading" class="coreOuterWrapper">
+
+
+  <div class="leftSideMenu">
+    <div class="sideMenuitem" (click)="selectedMenuItem=0" [ngClass]="{'topMenuItem' : selectedMenuItem == 0 || !selectedMenuItem}">
+      English
+      <div class="littleOffWhiteTriangle" *ngIf="selectedMenuItem == 0 || !selectedMenuItem"></div>
+    </div>
+    <div class="sideMenuitem" (click)="selectedMenuItem=1" [ngClass]="{'topMenuItem' : selectedMenuItem == 1}">
+      My Papers
+      <div class="littleOffWhiteTriangle" *ngIf="selectedMenuItem == 1"></div>
+    </div>
+    <div class="sideMenuitem" (click)="selectedMenuItem=2" [ngClass]="{'topMenuItem' : selectedMenuItem == 2}">
+      My Libary
+      <div class="littleOffWhiteTriangle" *ngIf="selectedMenuItem == 2"></div>
+    </div>
+    <div class="sideMenuitem" (click)="selectedMenuItem=3" [ngClass]="{'topMenuItem' : selectedMenuItem == 3}">
+      Collaboration
+      <div class="littleOffWhiteTriangle" *ngIf="selectedMenuItem == 3"></div>
+    </div>
+  </div>
+
+  <div class="coreContent">
+
+    <div class="myPaperMode" *ngIf="selectedMenuItem == 1">
+      <h1>Semester Two, 2018</h1>
+
+      <div class="aPaperCard">
+        <i class="icon-paper"></i>
+      </div>
+
+      <div class="aPaperCard">
+
+      </div>
+
+      <div class="aPaperCard">
+
+      </div>
+
+      <br />
+
+      <div class="aPaperCard">
+
+      </div>
+
+      <div class="aPaperCard">
+
+      </div>
+
+      <div class="aPaperCard">
+
+      </div>
+
+      <br />
+
+      <div class="aPaperCard">
+
+      </div>
+
+      <div class="aPaperCard">
+
+      </div>
+
+      <div class="aPaperCard">
+
+      </div>
+
+    </div>
+
+  </div>
 </div>
 
-<div *ngIf="loading">
+<div *ngIf="!loading">
   loading...
 </div>

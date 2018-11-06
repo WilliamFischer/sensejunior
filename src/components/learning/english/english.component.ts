@@ -11,6 +11,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 export class englishComponent implements OnInit {
   loading: boolean = true;
+  selectedMenuItem: number = 0;
 
   constructor(public navCtrl: NavController) {
   }
